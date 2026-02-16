@@ -1,0 +1,9 @@
+// Dev container for gRPC Python development
+// TIL: behind the scenes, devcontainer json is worked on as jsonc (thats how this comment works) 
+{
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers-extra/features/protoc:1": {}
+  },
+  "postCreateCommand": "pip install --upgrade grpcio grpcio-tools protobuf"
+}
